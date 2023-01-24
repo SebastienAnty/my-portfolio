@@ -1,0 +1,98 @@
+.about_container {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.about_title {
+    position: absolute;
+    top: 96px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.about_img {
+    margin-bottom: -80px;
+    border-radius: 9999px;
+    flex-shrink: 0;
+    width: 224px;
+    height: 224px;
+    object-fit: cover;
+}
+
+.aboutText_container {
+    padding-left: 0px;
+    padding-right: 0px;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.about_text {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.about__cards {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem
+}
+
+.about__card {
+    --tw-text-opacity: 0.1;
+    background-color: rgb(107 114 128 / var(--tw-text-opacity));
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about__icon {
+    color: rgb(243, 72, 72);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about__card:hover {
+    background: transparent;
+    border-color: rgb(243, 72, 72);
+}
+
+@media screen and (min-width: 768px) {
+    .about_container {
+        text-align: left;
+        flex-direction: row;
+    }
+    .about_img {
+            margin-bottom: 0px;
+            border-radius: 8px;
+            width: 256px;
+            height: 350px;
+    }
+    .aboutText_container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about_img {
+        width: 500px;
+        height: 600px;
+    }
+}

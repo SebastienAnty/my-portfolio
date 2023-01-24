@@ -1,0 +1,48 @@
+.header_container {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 20;
+    padding: 1.25rem
+}
+
+.social_icon_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email_icon_container {
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+--tw-text-opacity: 1;
+color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.get_in_touch {
+    text-transform: uppercase;
+    display: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+@media screen and (min-width: 768px) {
+    .get_in_touch {
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header_container {
+        align-items: center;
+    }
+}

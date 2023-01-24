@@ -1,0 +1,99 @@
+.experienceCard_container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.experience_card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    align-items: center;
+    flex-shrink: 0;
+    width: 500px;
+    scroll-snap-align: center;
+    padding: 2.5rem;
+    opacity: 0.4;
+    cursor: pointer;
+    overflow: hidden;
+
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+
+    --tw-bg-opacity: 1;
+    --tw-space-y-reverse: 0;
+    background-color: rgb(41 41 41 / var(--tw-bg-opacity));
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.experience_card:hover {
+    opacity: 1;
+}
+
+.experienceCard_title {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.experience_techUsed {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.experience_company {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.experience_img {
+    width: 128px;
+    height: 128px;
+    border-radius: 9999px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.experience_list {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.experience_date {
+    text-transform: uppercase;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+    .experience_img {
+        width: 200px;
+        height: 200px;
+    }
+    .experience_card {
+        width: 900px;
+    }
+}
+
+@media (min-width: 768px) {
+    .experienceCard_container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .experience_card {
+        width: 600px;
+    }
+}

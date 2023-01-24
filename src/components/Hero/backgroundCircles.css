@@ -1,0 +1,74 @@
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .5;
+    }
+}
+
+.circle_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smCircle {
+    position: absolute;
+    border-width: 1px;
+    height: 200px;
+    width: 200px;
+    margin-top: 208px;
+    border-radius: 9999px;
+    border-color: "#333333";
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.mCircle {
+    position: absolute;
+    border-width: 1px;
+    height: 300px;
+    width: 300px;
+    margin-top: 208px;
+    border-radius: 9999px;
+    border-color: "#333333";
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.lgCircle {
+    position: absolute;
+    border-width: 1px;
+    height: 500px;
+    width: 500px;
+    margin-top: 208px;
+    border-radius: 9999px;
+    border-color: #333333;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.coloredCircle {
+    position: absolute;
+    border-width: 1px;
+    height: 650px;
+    width: 650px;
+    margin-top: 208px;
+    border-radius: 9999px;
+    border-color: rgb(243, 72, 72);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.xlCircle {
+        position: absolute;
+        border-width: 1px;
+        height: 800px;
+        width: 800px;
+        margin-top: 208px;
+        border-radius: 9999px;
+        border-color: #333333;
+        animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

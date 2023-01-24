@@ -1,0 +1,83 @@
+.skill_iconContainer {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.skill_icons {
+    border-radius: 9999px;
+    border-width: 1px;
+    object-fit: cover;
+    width: 6rem;
+    height: 6rem;
+    
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+
+    --tw-border-opacity: 1;
+    border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.skill_icons:hover {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.skill-percentage_background {
+    position: absolute;
+    opacity: 0;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 9999px;
+    z-index: 0;
+
+    transition-property: color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.skill-percentage_background:hover {
+    opacity: 0.8;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.skill-percentage_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.skill-percentage { 
+    opacity: 1;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    z-index: 1;
+    
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+
+@media screen and (min-width: 1280px) {
+    .skill_icons {
+        width: 8rem;
+        height: 8rem;
+    }
+    .skill-percentage_background {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .skill-percentage_background {
+        width: 6rem;
+        height: 6rem;
+    }
+}
