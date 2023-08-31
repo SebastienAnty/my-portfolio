@@ -51,11 +51,6 @@ export const skills = [
     skillLvl: "85%",
   },
   {
-    skillImg:
-      "https://www.chevtek.io/content/images/2021/02/ezgif.com-gif-maker.png",
-    skillLvl: "85%",
-  },
-  {
     skillImg: "https://mui.com/static/logo.png",
     skillLvl: "85%",
   },
