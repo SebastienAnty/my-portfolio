@@ -35,9 +35,9 @@ function App() {
       </section>
 
       <a href="#hero">
-        <footer className="footer_container">
-          <div className="footer-icon_position">
-            <AiOutlineHome className="footer_icon" />
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <AiOutlineHome className="h-10 w-10 rounded-full filter grayscale-0 hover:bg-[#f34848] cursor-pointer" />
           </div>
         </footer>
       </a>
