@@ -60,7 +60,7 @@ export const skills = [
   },
   {
     skillImg: "https://cdn-icons-png.flaticon.com/512/5968/5968371.png",
-    skillLvl: "18%",
+    skillLvl: "8%",
   },
   {
     skillImg: "https://miro.medium.com/max/1200/1*0f4dvSifVihCIgWtXuBXnQ.png",

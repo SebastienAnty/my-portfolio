@@ -25,7 +25,7 @@
 }
 
 .about_img {
-    margin-bottom: -80px;
+    margin-bottom: 90px;
     border-radius: 9999px;
     flex-shrink: 0;
     width: 224px;
@@ -78,21 +78,9 @@
         text-align: left;
         flex-direction: row;
     }
-    .about_img {
-            margin-bottom: 0px;
-            border-radius: 8px;
-            width: 256px;
-            height: 350px;
-    }
+
     .aboutText_container {
         padding-left: 40px;
         padding-right: 40px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .about_img {
-        width: 500px;
-        height: 600px;
     }
 }

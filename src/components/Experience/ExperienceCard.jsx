@@ -1,34 +1,48 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { workExperience } from "./WorkExperience";
-import "./experienceCard.css";
 
 const ExperienceCard = () => {
   return (
     <>
       {workExperience.map((work) => {
         return (
-          <article className="experience_card transition-opacity duration-200">
+          <article
+            className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 
+          w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p10 hover:opacity-100
+          opacity-40 cursor-pointer transition-opacity duration-300 overflow-hidden"
+          >
             <motion.img
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="experience_img"
+              className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
               src={work?.companyLogo}
               alt={work?.altTag}
             />
 
-            <div className="experienceCard_container">
-              <h4 className="experienceCard_title">{work?.jobTitle}</h4>
-              <p className="experience_company">{work?.companyName}</p>
-              <div className="experience_techUsed"></div>
-              <p className="experience_date">
+            <div className="px-0 md:px-10">
+              <h4 className="text-4xl font-light">{work?.jobTitle}</h4>
+              <p className="font-bold text-2xl mt-1">{work?.companyName}</p>
+              {/* <div className="flex space-x-2 my-2">
+                {work.techUsed.map((tech, index) => {
+                  <img
+                    className="h-10 w-10 rounded-full"
+                    key={index}
+                    src={tech[0]}
+                    alt="Tech Logos"
+                  />;
+                })}
+              </div> */}
+              <p className="uppercase py-5 text-gray-300">
                 {work?.startDate} - {work?.endDate}
               </p>
 
-              <ul className="experience_list">
-                <li>{work.summaryPoints}</li>
+              <ul className="list-disc space-y-4 ml-5 text-lg">
+                {work.summaryPoints.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
               </ul>
             </div>
           </article>

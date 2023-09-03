@@ -1,16 +1,17 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import ResumeDownload from "../../assets/AntySebastien_Resume2023.pdf";
+import ResumeDownload from "../../assets/Anty_Sebastien_2023.pdf";
 import ME from "../../assets/Me.jpg";
 import "./hero.css";
 
 const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, my name is Sébastien-Molière Anty",
-      "Software Engineer",
-      "Mobile Engineering Savant",
+      "Hi my name is Sébastien Anty",
+      "Web Developer 🖥️",
+      "Mobile Developer📱",
+      "<Full Stack Developer />",
     ],
     loop: true,
     delaySpeed: 2000,

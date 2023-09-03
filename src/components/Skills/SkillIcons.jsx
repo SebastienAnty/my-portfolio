@@ -1,27 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { skills } from "./IndividualSkill";
-import "./skill-icon.css";
 
-const SkillIcons = ({ directionLeft }) => {
-  console.log("---->", skills);
-
+const SkillIcons = () => {
   return (
     <>
       {skills.map((skill) => {
         return (
-          <div className="skill_iconContainer">
+          <div className="group relative flex cursor-pointer">
             <motion.img
-              initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               src={skill?.skillImg}
-              className="skill_icons"
+              className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32
+              xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
             />
 
-            <div className="skill-percentage_background md:w-28">
-              <div className="skill-percentage_container">
-                <p className="skill-percentage">{skill?.skillLvl}</p>
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out
+            group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-3xl font-bold text-black opacity-100">
+                  {skill?.skillLvl}
+                </p>
               </div>
             </div>
           </div>
