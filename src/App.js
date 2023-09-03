@@ -34,13 +34,13 @@ function App() {
         <ContactMe />
       </section>
 
-      {/* <a href="#hero">
+      <a href="#hero">
         <footer className="footer_container">
           <div className="footer-icon_position">
             <AiOutlineHome className="footer_icon" />
           </div>
         </footer>
-      </a> */}
+      </a>
     </div>
   );
 }

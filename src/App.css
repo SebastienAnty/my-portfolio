@@ -27,12 +27,12 @@
   }
 }
 
-/* .footer_container {
+.footer_container {
   position: sticky;
   bottom: 1.25rem;
   width: 100%;
   cursor: pointer;
-} */
+}
 
 .footer_icon {
   height: 2.5rem/* 40px */;
@@ -43,8 +43,8 @@
   /* filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); */
 }
 
-/* .footer-icon_position {
+.footer-icon_position {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
