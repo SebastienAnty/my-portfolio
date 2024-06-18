@@ -1,7 +1,7 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import ResumeDownload from "../../assets/Anty_Sebastien_2023.pdf";
+import ResumeDownload from "../../assets/AntySebastien_Resume.pdf";
 import ME from "../../assets/Me.jpg";
 import "./hero.css";
 
