@@ -1,0 +1,87 @@
+[debug] [2024-06-18T19:18:25.931Z] ----------------------------------------------------------------------
+[debug] [2024-06-18T19:18:25.935Z] Command:       /Users/sebastien-manty/.nvm/versions/node/v21.6.2/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-06-18T19:18:25.935Z] CLI Version:   13.3.0
+[debug] [2024-06-18T19:18:25.935Z] Platform:      darwin
+[debug] [2024-06-18T19:18:25.936Z] Node Version:  v21.6.2
+[debug] [2024-06-18T19:18:25.936Z] Time:          Tue Jun 18 2024 15:18:25 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-06-18T19:18:25.936Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-18T19:18:25.939Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-06-18T19:18:25.996Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-18T19:18:25.996Z] > authorizing via signed-in user (sebastienmanty@gmail.com)
+[debug] [2024-06-18T19:18:25.996Z] [iam] checking project sma-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-18T19:18:25.996Z] > refreshing access token with scopes: []
+[debug] [2024-06-18T19:18:25.997Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-18T19:18:25.997Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-18T19:18:26.120Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-06-18T19:18:26.120Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-06-18T19:18:26.151Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-18T19:18:26.152Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-18T19:18:26.166Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions [none]
+[debug] [2024-06-18T19:18:26.166Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions x-goog-quota-user=projects/sma-portfolio
+[debug] [2024-06-18T19:18:26.166Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-18T19:18:26.449Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions 200
+[debug] [2024-06-18T19:18:26.449Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions {}
+[debug] [2024-06-18T19:18:26.449Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project sma-portfolio:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-06-18T19:18:26.450Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio [none]
+[debug] [2024-06-18T19:18:26.744Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio 403
+[debug] [2024-06-18T19:18:26.745Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-06-18T19:18:26.745Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-06-18T19:18:26.746Z] Specified "public" directory "build" does not exist; Deploy to Hosting site "" may fail or be empty.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-06-18T19:20:21.583Z] ----------------------------------------------------------------------
+[debug] [2024-06-18T19:20:21.587Z] Command:       /Users/sebastien-manty/.nvm/versions/node/v21.6.2/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-06-18T19:20:21.587Z] CLI Version:   13.3.0
+[debug] [2024-06-18T19:20:21.587Z] Platform:      darwin
+[debug] [2024-06-18T19:20:21.587Z] Node Version:  v21.6.2
+[debug] [2024-06-18T19:20:21.588Z] Time:          Tue Jun 18 2024 15:20:21 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-06-18T19:20:21.588Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-18T19:20:21.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-18T19:20:21.622Z] > authorizing via signed-in user (sebastienmanty@gmail.com)
+[debug] [2024-06-18T19:20:21.622Z] [iam] checking project sma-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-18T19:20:21.623Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions [none]
+[debug] [2024-06-18T19:20:21.623Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions x-goog-quota-user=projects/sma-portfolio
+[debug] [2024-06-18T19:20:21.623Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-18T19:20:21.847Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions 200
+[debug] [2024-06-18T19:20:21.847Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions {}
+[debug] [2024-06-18T19:20:21.847Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project sma-portfolio:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-06-18T19:20:21.848Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio [none]
+[debug] [2024-06-18T19:20:22.147Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio 403
+[debug] [2024-06-18T19:20:22.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-06-18T19:20:22.148Z] HTTP Error: 403, The caller does not have permission
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-06-18T19:21:26.666Z] ----------------------------------------------------------------------
+[debug] [2024-06-18T19:21:26.670Z] Command:       /Users/sebastien-manty/.nvm/versions/node/v21.6.2/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-06-18T19:21:26.670Z] CLI Version:   13.3.0
+[debug] [2024-06-18T19:21:26.670Z] Platform:      darwin
+[debug] [2024-06-18T19:21:26.670Z] Node Version:  v21.6.2
+[debug] [2024-06-18T19:21:26.670Z] Time:          Tue Jun 18 2024 15:21:26 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-06-18T19:21:26.670Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-18T19:21:26.704Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-18T19:21:26.704Z] > authorizing via signed-in user (sebastienmanty@gmail.com)
+[debug] [2024-06-18T19:21:26.704Z] [iam] checking project sma-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-18T19:21:26.705Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions [none]
+[debug] [2024-06-18T19:21:26.705Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions x-goog-quota-user=projects/sma-portfolio
+[debug] [2024-06-18T19:21:26.705Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-18T19:21:26.959Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions 200
+[debug] [2024-06-18T19:21:26.959Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sma-portfolio:testIamPermissions {}
+[debug] [2024-06-18T19:21:26.959Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project sma-portfolio:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-06-18T19:21:26.960Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio [none]
+[debug] [2024-06-18T19:21:27.246Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio 403
+[debug] [2024-06-18T19:21:27.246Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sma-portfolio {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-06-18T19:21:27.247Z] HTTP Error: 403, The caller does not have permission
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier

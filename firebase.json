@@ -1,10 +1,7 @@
 {
   "hosting": {
+    "site": "sma-portfolio",
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
